@@ -1,7 +1,14 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: tushar
- * Date: 12/25/14
- * Time: 10:13 PM
- */
+$ID = $_GET['ID'];
+
+$link = mysqli_connect("localhost",
+    "root",
+    "rts",
+    "personalInfo");
+
+$query = "DELETE FROM `personalInfo`.`personalinfo` WHERE `personalinfo`.`ID` = $ID";
+
+mysqli_query($link, $query);
+
+header('location:list.php');
+?>
