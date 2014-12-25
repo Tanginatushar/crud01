@@ -1,7 +1,18 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: tushar
- * Date: 12/25/14
- * Time: 10:12 PM
- */
+$ID = $_POST['ID'];
+$fullName = $_POST['fullName'];
+
+
+$link = mysqli_connect("localhost",
+    "root",
+    "rts",
+    "personalInfo");
+$query = "INSERT INTO `personalInfo`.`personalinfo`(
+`ID`,
+`fullName`
+)
+VALUES('$ID','$fullName')";
+mysqli_query($link, $query);
+
+header('location:list.php');
+?>

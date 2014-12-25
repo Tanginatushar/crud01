@@ -19,28 +19,7 @@ $link = mysqli_connect("localhost",
     "rts",
     "applicants");
 
-$query = "INSERT INTO `applicants`.`personalInformation` (
-`ID`,
-`firstName` ,
-`lastName`,
-`fatherName`,
-`motherName`,
-`religion`,
-`dateOfBirth`,
-`gender`,
-`nationality`,
-`nationalId`,
-`presentAddress`,
-`permanentAddress`,
-`mobile`,
-`email`
-)
-VALUES (
-    '$ID','$firstName', '$lastName','$fatherName','$motherName','$religion','$dateOfBirth',
-    '$gender','$nationality','$nationalId','$presentAddress','$permanentAddress','$mobile','$email'
-
-)";
-mysqli_query($link, $query);
-
-header('location:list_personal_information.php');
-?>
+$link = mysqli_connect("localhost",
+    "root",
+    "rts",
+    "applicants");
