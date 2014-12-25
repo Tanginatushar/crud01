@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Online Application Form</title>
+</head>
+<body>
+<form action ="add.php"method="post">
+    Track Information:</br></br>
+    Preferred Track:<select name="PreferredTrack">
+    <option>ITS</option>
+    <option>ITES</option>
+</select></br>
+    S.S.C Roll:<input type="number"name="sscRoll"></br>
+    S.S.C Board:<input type="text"name="sscBoard"></br>
+    H.S.C Roll:<input type="number"name="hscRoll"></br>
+    H.S.C Board:<input type="text"name="hscBoard"></br>
+    Has laptop:<input type="radio" name="hasLaptop"value="Yes">Yes</br>
+                <input type="radio" name="hasLaptop"value="No">No</br>
+</select></br>
+    Preferred Exam Center:<select name="PreferredExamCenter">
+    <option>BCC Dhaka</option>
+    <option>BCC Chittagong</option>
+</select></br>
+    </br>
+    </br>
+Personal Information:</br></br>
+    First Name:<input type="text"name="firstName"></br>
+    Last Name: <input type="text"name="lastName"></br>
+    Father's Name: <input type="text"name="fatherName"></br>
+    Mother's Name: <input type="text"name="motherName"></br>
+    Religion: <input type="text"name="religion"></br>
+    Date of Birth: <input type="text"name="DateOfBirth"></br>
+    Gender: <input type="checkbox" name="Gender"value="Male"/>Male</br>
+            <input type="checkbox" name="Gender"value="female"/>Female</br></br>
+    Nationality: <input type="text"name="nationality"></br>
+    National ID: <input type="text"name="nationalId"></br>
+    </br>
+    </br>
+
+Contact Information:</br>
+    </br>
+    Present Address: <input type="text"name="presentAddress"></br>
+    Permanent Address: <input type="text"name="permanentAddress"></br>
+    Mobile:<input type="text"name="mobile"></br>
+    Email:<input type="text"name="email"></br>
+    </br>
+    </br>
+Academic Qualification:</br>
+    Level of Education:<select name="levelOfEducation">
+    <option>Select degree</option>
+    <option>Masters</option>
+    <option>Bachelor</option>
+    <option>Diploma</option>
+    <option>HSC</option>
+    <option>SSC</option>
+</select></br>
+    Degree Name:<input type="text"name="degreeName"></br>
+    Group:<input type="text"name="group"></br>
+    Institute Name<input type="text"name="instituteName"></br>
+    Result:<input type="text"name="result"></br>
+    Passing Year:<input type="number"name="passingYear"></br>
+    Duration:<select name="duration">
+    <option>Select</option>
+    <option>4</option>
+    <option>3</option>
+    <option>2</option>
+</select></br>
+    </br>
+    Achievements:<input type="text"name="achievement"></br>
+    Completion Status:<select name="completionStatus">
+    <option>Select</option>
+    <option>Appeared</option>
+    <option>Completed</option>
+</select></br>
+    </br></br>
+ ICT Skills:</br>
+    <textarea rows="10"cols="30"name="ictSkills">Point out skills here
+</textarea>
+    </br></br>
+    <input type="checkbox" name="agree"value="agree"/>I agree that above information are correct</br>
+
+    <input type="submit"value="Send">
+    <input type="reset"value="Reset">
+    </form>
+</body>
+</html>
