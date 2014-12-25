@@ -7,7 +7,7 @@ $link = mysqli_connect("localhost",
     "rts",
     "personalInfo");
 
-$query = "select * from personalinfo WHERE id = $id";
+$query = "select * from personalinfo WHERE ID = $ID";
 
 $result = mysqli_query($link, $query);
 
