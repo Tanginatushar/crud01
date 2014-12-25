@@ -10,7 +10,7 @@ $hasLaptop=$_POST['hasLaptop'];
 $preferredExamCenter=$_POST['preferredExamCenter'];
 $link = mysqli_connect("localhost",
     "root",
-    "rts",
+    "lict@2",
     "applicants");
 
 $query = "INSERT INTO `applicants`.`track` (

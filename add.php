@@ -24,10 +24,10 @@ $email=$_POST['email'];
 
 $link = mysqli_connect("localhost",
     "root",
-    "rts",
+    "lict@2",
     "applicants");
 
-$query = "INSERT INTO `applicants`.`info` (
+$query = "INSERT INTO `applicants`.`applicants_info` (
 `ID`,
 `preferredTrack` ,
 `sscRoll`,

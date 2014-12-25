@@ -3,7 +3,7 @@ $ID = $_GET['ID'];
 
 $link = mysqli_connect("localhost",
     "root",
-    "rts",
+    "lict@2",
     "applicants");
 
 $query = "DELETE FROM `applicants`.`track` WHERE `track`.`ID` = $ID";

@@ -2,10 +2,10 @@
 $ID = $_GET['ID'];
 $link = mysqli_connect("localhost",
     "root",
-    "rts",
+    "lict@2",
     "applicants");
 
-$query = "select * from info ";
+$query = "select * from applicants_info ";
 
 $result = mysqli_query($link, $query);
 
