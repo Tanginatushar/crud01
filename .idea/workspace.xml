@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f315d7d5-383d-4ea3-befb-a99f9b98e27d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/personalinfo/delete.php" afterPath="$PROJECT_DIR$/personalinfo/delete.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/personalinfo/update.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/personalinfo/edit.php" afterPath="$PROJECT_DIR$/personalinfo/edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="crud01.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -96,10 +98,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="delete.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="delete.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/personalinfo/delete.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33811477" vertical-offset="0" max-vertical-offset="488">
+            <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="285">
               <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
                 <marker date="1419528900757" expanded="true" signature="117:187" placeholder="DELETE FROM ..." />
@@ -108,11 +110,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="edit.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/personalinfo/edit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="180">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.46106556" vertical-offset="0" max-vertical-offset="488">
+              <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+              <folding>
+                <marker date="1419529625041" expanded="true" signature="115:153" placeholder="select * fro..personalInfo..." />
+                <marker date="1419529625041" expanded="true" signature="115:154" placeholder="select * fro..personalInfo..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="update.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/personalinfo/update.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="255">
+              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -137,6 +152,8 @@
         <option value="$PROJECT_DIR$/personalinfo/create.html" />
         <option value="$PROJECT_DIR$/personalinfo/view.php" />
         <option value="$PROJECT_DIR$/personalinfo/delete.php" />
+        <option value="$PROJECT_DIR$/personalinfo/update.php" />
+        <option value="$PROJECT_DIR$/personalinfo/edit.php" />
       </list>
     </option>
   </component>
@@ -425,14 +442,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/personalinfo/edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="512">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/personalinfo/create.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
@@ -544,10 +553,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/personalinfo/delete.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33811477" vertical-offset="0" max-vertical-offset="488">
+        <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="285">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <marker date="1419528900757" expanded="true" signature="117:187" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personalinfo/update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="255">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personalinfo/edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46106556" vertical-offset="0" max-vertical-offset="488">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+          <folding>
+            <marker date="1419529625041" expanded="true" signature="115:153" placeholder="select * fro..personalInfo..." />
+            <marker date="1419529625041" expanded="true" signature="115:154" placeholder="select * fro..personalInfo..." />
           </folding>
         </state>
       </provider>
