@@ -21,6 +21,7 @@ $row = mysqli_fetch_assoc($result);
         <td>Father's Name</td>
         <td>Mother's Name</td>
         <td>Religion</td>
+        <td>Date of Birth</td>
 
         <td>Action</td>
         <td>Action</td>
@@ -35,6 +36,7 @@ $row = mysqli_fetch_assoc($result);
             <td><?php echo $row['fatherName']?></td>
             <td><?php echo $row['motherName']?></td>
             <td><?php echo $row['religion']?></td>
+            <td><?php echo $row['dateOfBirth']?></td>
 
             <td> <a href="edit.php?ID=<?php echo $row['ID']?>">Edit</a> | <a href="delete.php?ID=<?php echo $row['ID']?>">Delete</a> </td>
             <td><a href="view.php?ID=<?php echo $row['ID']?>">view</a> </td>
