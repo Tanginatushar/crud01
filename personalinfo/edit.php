@@ -11,6 +11,7 @@ $row = mysqli_fetch_assoc($result);
 <form action="update.php" method="post">
     <input type="hidden" name="ID" value="<?php echo $row['ID'];?>" />
     Full Name:<input type="text" name="fullName" value="<?php echo $row['fullName'];?>" />
+    Father's Name:<input type="text" name="fatherName" value="<?php echo $row['fatherName'];?>" />
 
     <button type="submit">Submit</button>
 </form>
