@@ -3,6 +3,7 @@
 $ID = $_POST['ID'];
 $presentAddress  = $_POST['presentAddress'];
 $permanentAddress = $_POST['permanentAddress'];
+$country=$_POST['country'];
 $mobile=$_POST['mobile'];
 $email=$_POST['email'];
 
@@ -13,6 +14,7 @@ $link = mysqli_connect("localhost",
 
 $query = "UPDATE `contactInfo`.`contactinfo` SET `presentAddress` = '".$presentAddress."',
  `permanentAddress` = '".$permanentAddress."',
+ `country` = '".$country."',
   `mobile` = '".$mobile."',
   `email` = '".$email."' WHERE `contactinfo`.`ID` = $ID;";
 
