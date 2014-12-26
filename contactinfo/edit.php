@@ -10,7 +10,7 @@ $result = mysqli_query($link, $query);
 $row = mysqli_fetch_assoc($result);
 ?>
 <form action="update.php" method="post">
-    <input type="hidden" name="ID" value="<?php echo $row['ID'];?>" />
+    <input type="text" name="ID" value="<?php echo $row['ID'];?>" />
     Present Address:<input type="text" name="presentAddress" value="<?php echo $row['presentAddress'];?>" /></br>
     Permanent Address:<input type="text" name="permanentAddress" value="<?php echo $row['permanentAddress'];?>" /></br>
 
