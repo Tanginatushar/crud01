@@ -12,12 +12,13 @@ $link = mysqli_connect("localhost",
     "root",
     "lict@2",
     "personalInfo");
-$query = "UPDATE `personalInfo`.`personalinfo` SET `fullName` = '".$fullName."' WHERE `personalinfo`.`ID` = $ID;";
-$query = "UPDATE `personalInfo`.`personalinfo` SET `fatherName` = '".$fatherName."' WHERE `personalinfo`.`ID` = $ID;";
-$query = "UPDATE `personalInfo`.`personalinfo` SET `motherName` = '".$motherName."' WHERE `personalinfo`.`ID` = $ID;";
-$query = "UPDATE `personalInfo`.`personalinfo` SET `religion` = '".$religion."' WHERE `personalinfo`.`ID` = $ID;";
-$query = "UPDATE `personalInfo`.`personalinfo` SET `dateOfBirth` = '".$dateOfBirth."' WHERE `personalinfo`.`ID` = $ID;";
-$query = "UPDATE `personalInfo`.`personalinfo` SET `nationalId` = '".$nationalId."' WHERE `personalinfo`.`ID` = $ID;";
+$query = "UPDATE `personalInfo`.`personalinfo` SET `fullName` = '".$fullName."',
+ `fatherName` = '".$fatherName."' ,
+ `motherName` = '".$motherName."',
+ `religion` = '".$religion."',
+ `dateOfBirth` = '".$dateOfBirth."',
+ `nationalId` = '".$nationalId."'
+ WHERE `personalinfo`.`ID` = $ID;";
 
 mysqli_query($link, $query);
 header('location:list.php');

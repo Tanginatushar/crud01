@@ -16,5 +16,5 @@ $row = mysqli_fetch_assoc($result);
     email:<input type="text" name="email" value="<?php echo $row['email'];?>" />
 
 
-    <button type="submit">Submit</button>
+    <input type="submit" name="update" value="go">
 </form>
