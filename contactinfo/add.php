@@ -5,6 +5,7 @@ $permanentAddress = $_POST['permanentAddress'];
 $country=$_POST['country'];
 $mobile=$_POST['mobile'];
 $email=$_POST['email'];
+$hasPassport=$_POST['hasPassport'];
 
 
 $link = mysqli_connect("localhost",
@@ -17,9 +18,10 @@ $query = "INSERT INTO `contactInfo`.`contactinfo`(
 `permanentAddress`,
 `country`,
 `mobile`,
-`email`
+`email`,
+`hasPassport`
 )
-VALUES('$ID','$presentAddress','$permanentAddress','$country','$mobile','$email')";
+VALUES('$ID','$presentAddress','$permanentAddress','$country','$mobile','$email','$hasPassport')";
 mysqli_query($link, $query);
 
 header('location:list.php');

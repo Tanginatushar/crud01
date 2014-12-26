@@ -29,6 +29,7 @@ $row = mysqli_fetch_assoc($result);
         <td>Country</td>
         <td>Mobile</td>
         <td>email</td>
+        <td>hasPassport</td>
 
         <td>Action</td>
         <td>Action</td>
@@ -44,6 +45,7 @@ $row = mysqli_fetch_assoc($result);
             <td><?php echo $row['country']?></td>
             <td><?php echo $row['mobile']?></td>
             <td><?php echo $row['email']?></td>
+            <td><?php echo $row['hasPassport']?></td>
             <td> <a href="edit.php?ID=<?php echo $row['ID']?>">Edit</a> | <a href="delete.php?ID=<?php echo $row['ID']?>">Delete</a> </td>
             <td><a href="view.php?ID=<?php echo $row['ID']?>">view</a> </td>
         </tr>

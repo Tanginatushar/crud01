@@ -1,6 +1,7 @@
 <?php
 $ID = $_GET['ID'];
 $country;
+
 $link = mysqli_connect("localhost",
     "root",
     "lict@2",
@@ -10,10 +11,9 @@ $result = mysqli_query($link, $query);
 $row = mysqli_fetch_assoc($result);
 ?>
 <form action="update.php" method="post">
-    <input type="text" name="ID" value="<?php echo $row['ID'];?>" />
+    ID<input type="text" name="ID" value="<?php echo $row['ID'];?>" />
     Present Address:<input type="text" name="presentAddress" value="<?php echo $row['presentAddress'];?>" /></br>
     Permanent Address:<input type="text" name="permanentAddress" value="<?php echo $row['permanentAddress'];?>" /></br>
-
     Country:<select name = "country">
         <option value="Bangladesh"<?php if($country=='Bangladesh')echo "Bangladesh"?>>Bangladesh </option>
         <option value="U.S.A"<?php if($country=='U.S.A')echo "selected=selected"?>>U.S.A </option>
@@ -24,7 +24,11 @@ $row = mysqli_fetch_assoc($result);
     </br>
 
     Mobile:<input type="text" name="mobile" value="<?php echo $row['mobile'];?>" /></br>
-    email:<input type="text" name="email" value="<?php echo $row['email'];?>" />
+    email:<input type="text" name="email" value="<?php echo $row['email'];?>" /></br>
+
+    Has Passport:<input type="radio" name="hasPassport"<?php if ($row['hasPassport']=='yes')echo "checked";?>value="Yes" />Yes
+                <input type="radio" name="hasPassport"<?php if ($row['hasPassport']=='no')echo "checked"; ?>value="No" />No
+
 
 
     <input type="submit" name="update" value="Update">
