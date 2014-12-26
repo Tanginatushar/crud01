@@ -12,6 +12,7 @@ $row = mysqli_fetch_assoc($result);
     <input type="hidden" name="ID" value="<?php echo $row['ID'];?>" />
     Full Name:<input type="text" name="fullName" value="<?php echo $row['fullName'];?>" />
     Father's Name:<input type="text" name="fatherName" value="<?php echo $row['fatherName'];?>" />
+    Mother's Name:<input type="text" name="motherName" value="<?php echo $row['motherName'];?>" />
 
     <button type="submit">Submit</button>
 </form>

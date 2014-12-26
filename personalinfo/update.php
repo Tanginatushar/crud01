@@ -3,6 +3,7 @@
 $ID = $_POST['ID'];
 $fullName = $_POST['fullName'];
 $fatherName = $_POST['fatherName'];
+$motherName = $_POST['motherName'];
 
 $link = mysqli_connect("localhost",
     "root",
@@ -10,5 +11,6 @@ $link = mysqli_connect("localhost",
     "personalInfo");
 $query = "UPDATE `personalInfo`.`personalinfo` SET `fullName` = '".$fullName."' WHERE `personalinfo`.`ID` = $ID;";
 $query = "UPDATE `personalInfo`.`personalinfo` SET `fatherName` = '".$fatherName."' WHERE `personalinfo`.`ID` = $ID;";
+$query = "UPDATE `personalInfo`.`personalinfo` SET `motherName` = '".$motherName."' WHERE `personalinfo`.`ID` = $ID;";
 mysqli_query($link, $query);
 header('location:list.php');
