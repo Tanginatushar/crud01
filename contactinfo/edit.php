@@ -19,6 +19,7 @@ $row = mysqli_fetch_assoc($result);
         <option value="U.S.A"<?php if($country=='U.S.A')echo "selected=selected"?>>U.S.A </option>
         <option value="U.K"<?php if($country=='U.K')echo "selected=selected"?>>U.K </option>
         <option value="Nepal"<?php if($country=='Nepal')echo "selected=selected"?>>Nepal </option>
+        <option value="Japan"<?php if($country=='Japan')echo "selected=selected"?>>Japan </option>
 </select>
     </br>
 
