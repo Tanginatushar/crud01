@@ -5,6 +5,7 @@ $fatherName = $_POST['fatherName'];
 $motherName = $_POST['motherName'];
 $religion = $_POST['religion'];
 $dateOfBirth=$_POST['dateOfBirth'];
+$nationalId = $_POST['nationalId'];
 
 
 $link = mysqli_connect("localhost",
@@ -17,9 +18,10 @@ $query = "INSERT INTO `personalInfo`.`personalinfo`(
 `fatherName`,
 `motherName`,
 `religion`,
-`dateOfBirth`
+`dateOfBirth`,
+`nationalId`
 )
-VALUES('$ID','$fullName','$fatherName','$motherName','$religion','$dateOfBirth')";
+VALUES('$ID','$fullName','$fatherName','$motherName','$religion','$dateOfBirth',$nationalId)";
 mysqli_query($link, $query);
 
 header('location:list.php');

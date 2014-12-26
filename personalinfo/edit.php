@@ -15,6 +15,7 @@ $row = mysqli_fetch_assoc($result);
     Mother's Name:<input type="text" name="motherName" value="<?php echo $row['motherName'];?>" />
     Religion:<input type="text" name="religion" value="<?php echo $row['religion'];?>" />
     dateOfBirth:<input type="text" name="dateOfBirth" value="<?php echo $row['dateOfBirth'];?>" />
+    nationalId:<input type="text" name="nationalId" value="<?php echo $row['nationalId'];?>" />
 
 
     <button type="submit">Submit</button>
