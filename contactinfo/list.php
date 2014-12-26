@@ -17,7 +17,7 @@ $row = mysqli_fetch_assoc($result);
 <ul>
     <li><a href="#">Download as XL</a> </li>
     <li><a href="#">Download as PDF</a> </li>
-    <li><a href="create.html">Create New</a> </li>
+    <li><a href="create.html">Create New </a> </li>
 </ul>
 
 <table border="1" width="70%">
