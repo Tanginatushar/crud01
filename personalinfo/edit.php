@@ -13,6 +13,8 @@ $row = mysqli_fetch_assoc($result);
     Full Name:<input type="text" name="fullName" value="<?php echo $row['fullName'];?>" />
     Father's Name:<input type="text" name="fatherName" value="<?php echo $row['fatherName'];?>" />
     Mother's Name:<input type="text" name="motherName" value="<?php echo $row['motherName'];?>" />
+    Religion:<input type="text" name="religion" value="<?php echo $row['religion'];?>" />
+
 
     <button type="submit">Submit</button>
 </form>
