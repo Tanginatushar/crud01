@@ -10,7 +10,7 @@ $nationalId = $_POST['nationalId'];
 
 $link = mysqli_connect("localhost",
     "root",
-    "rts",
+    "lict@2",
     "personalInfo");
 $query = "UPDATE `personalInfo`.`personalinfo` SET `fullName` = '".$fullName."' WHERE `personalinfo`.`ID` = $ID;";
 $query = "UPDATE `personalInfo`.`personalinfo` SET `fatherName` = '".$fatherName."' WHERE `personalinfo`.`ID` = $ID;";

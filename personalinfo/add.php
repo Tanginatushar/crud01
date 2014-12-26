@@ -10,7 +10,7 @@ $nationalId = $_POST['nationalId'];
 
 $link = mysqli_connect("localhost",
     "root",
-    "rts",
+    "lict@2",
     "personalInfo");
 $query = "INSERT INTO `personalInfo`.`personalinfo`(
 `ID`,

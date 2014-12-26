@@ -5,9 +5,9 @@ $ID = $_GET['ID'];
 $link = mysqli_connect("localhost",
     "root",
     "lict@2",
-    "personalInfo");
+    "contactInfo");
 
-$query = "select * from personalinfo WHERE ID = $ID";
+$query = "select * from contactinfo WHERE ID = $ID";
 
 $result = mysqli_query($link, $query);
 
