@@ -1,0 +1,38 @@
+<title>Online Application Form</title>
+
+<body>
+<form action ="add.php"method="post">
+
+    <h3>Academic Qualification: </h3></br>
+    ID: <input type="number"name="ID"></br>
+    Level of Education:<select name="levelOfEducation">
+    <option>Select degree</option>
+    <option>Masters</option>
+    <option>Bachelor</option>
+    <option>Diploma</option>
+    <option>HSC</option>
+    <option>SSC</option>
+</select></br>
+    Exam Title:<input type="text"name="examTitle"></br>
+    Subject:<input type="text"name="subject"></br>
+    Institution<input type="text"name="institution"></br>
+    Result Type:<select name="resultType">
+    <option>Select</option>
+    <option>Grade</option>
+    <option>Division</option>
+
+</select>
+
+    Result:<input type="text"name="result">
+    Scale:<input type="number"name="rscale"></br>
+    Passing Year:<input type="number"name="passingYear"></br>
+    Duration:<input type="number"name="duration">
+    </br>
+    Achievements:
+    <textarea rows="5"cols="10"name="achievement"> add </textarea>
+    </br></br>
+
+
+    <input type="submit"value="Submit">
+</form>
+</body>
