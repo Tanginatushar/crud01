@@ -13,7 +13,7 @@ $result = mysqli_query($link, $query);
 
 $row = mysqli_fetch_assoc($result);
 
-print_r($row);
+echo ($row);
 ?>
 
 <a href="list.php">Go to Home</a>

@@ -10,6 +10,7 @@ $result = mysqli_query($link, $query);
 $row = mysqli_fetch_assoc($result);
 ?>
 <form action="update.php" method="post">
+    <h3>Employment History </h3></br>
     ID:<input type="number" name="ID" value="<?php echo $row['ID'];?>" />
     Company Name:<input type="text" name="comName" value="<?php echo $row['comName'];?>" /></br>
     Company Business:<input type="text" name="comBusiness" value="<?php echo $row['comBusiness'];?>" /></br>
@@ -18,11 +19,12 @@ $row = mysqli_fetch_assoc($result);
     Department:<input type="text" name="dep" value="<?php echo $row['dep'];?>" /></br>
     Employment Duration:<input type="text" name="emDu" value="<?php echo $row['emDu'];?>" /></br>
     Responsibility:<input type="text" name="res" value="<?php echo $row['res'];?>" /></br>
-
+    <h3>ICT Skills</h3><br>
     Experience Category:<input type="text" name="exCat" value="<?php echo $row['exCat'];?>" /></br>
     Skill Description:<input type="text" name="skillDes" value="<?php echo $row['skillDes'];?>" /></br>
     Extracurricular Activity:<input type="text" name="exAct" value="<?php echo $row['exAct'];?>" /></br>
 
+    <h3> Reference</h3><br>
     Name:<input type="text" name="name" value="<?php echo $row['name'];?>" /></br>
     Organisation:<input type="text" name="org" value="<?php echo $row['org'];?>" /></br>
     Address:<input type="text" name="add" value="<?php echo $row['add'];?>" /></br>
