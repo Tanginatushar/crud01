@@ -1,12 +1,12 @@
 <?php
-$ID=$_GET['ID'];
+//$ID=$_GET['ID'];
 
 $link = mysqli_connect("localhost",
     "root",
     "lict@2",
     "employskills");
 
-$query = "select * from empskilref";
+$query = "select * from empskilref ";
 
 $result = mysqli_query($link, $query);
 
@@ -14,24 +14,28 @@ $row = mysqli_fetch_assoc($result);
 
 ?>
 
-<a href="list.php">Go to Home</a><table border="1" width="70%">
+<a href="list.php">Go to Home</a>
+<ul>
+<li><a href="create.html">Create New </a> </li>
+</ul>
+<table border="1" width="70%">
     <tr>
         <td>ID</td>
         <td>Company Name</td>
         <td>Company Business</td>
         <td>Address</td>
         <td>Designation</td>
-        <td> Department</td>
+        <td>Department</td>
         <td>Employment Duration</td>
-        <td> Responsibility</td>
+        <td>Responsibility</td>
         <td>Experience Category</td>
-        <td> Skill Description</td>
-        <td> Extracurricular Activity</td>
+        <td>Skill Description</td>
+        <td>Extracurricular Activity</td>
         <td>Name</td>
-        <td> Organisation</td>
-        <td> Address</td>
-        <td> Relation</td>
-        <td>  Mobile</td>
+        <td>Organisation</td>
+        <td>Address</td>
+        <td>Relation</td>
+        <td>Mobile</td>
         <td>Email</td>
 
 
@@ -54,7 +58,7 @@ $row = mysqli_fetch_assoc($result);
             <td><?php echo $row['res']?></td>
             <td><?php echo $row['exCat']?></td>
             <td><?php echo $row['skillDes']?></td>
-            <td><?php echo $row['exCat']?></td>
+            <td><?php echo $row['exAct']?></td>
             <td><?php echo $row['name']?></td>
             <td><?php echo $row['org']?></td>
             <td><?php echo $row['add']?></td>

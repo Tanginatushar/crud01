@@ -1,4 +1,5 @@
 <?php
+
 $ID = $_POST['ID'];
 $comName = $_POST['comName'];
 $comBusiness = $_POST['comBusiness'];
@@ -9,7 +10,7 @@ $emDu = $_POST['emDu'];
 $res=$_POST['res'];
 $exCat = $_POST['exCat'];
 $skillDes = $_POST['skillDes'];
-$exAct = $_POST['exCat'];
+$exAct = $_POST['exAct'];
 $name = $_POST['name'];
 $org=$_POST['org'];
 $add = $_POST['add'];
@@ -34,9 +35,9 @@ $query = "INSERT INTO `employskills`.`empskilref` (
 `emDu` ,
 `res` ,
 `exCat` ,
-`skilldes` ,
+`skillDes`,
 `exAct` ,
-`name` ,
+`name`,
 `org` ,
 `add` ,
 `relation` ,
@@ -45,7 +46,7 @@ $query = "INSERT INTO `employskills`.`empskilref` (
 )
 VALUES (
     '$ID', '$comName', '$comBusiness', '$address', '$des', '$dep', '$emDu','$res', '$exCat', '$skillDes', '$exAct', '$name', '$org',
-    '$add', '$relation', '$mobile', '$email', 'rt'
+    '$add', '$relation', '$mobile', '$email'
 )";
 mysqli_query($link, $query);
 

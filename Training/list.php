@@ -1,5 +1,5 @@
 <?php
-$ID = $_GET['ID'];
+
 $link = mysqli_connect("localhost",
     "root",
     "lict@2",

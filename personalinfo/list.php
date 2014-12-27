@@ -14,7 +14,14 @@ $row = mysqli_fetch_assoc($result);
 
 ?>
 
-<a href="list.php">Go to Home</a><table border="1" width="70%">
+<a href="list.php">Go to Home</a>
+<ul>
+
+    <li><a href="create.html">Create New </a> </li>
+</ul>
+
+
+<table border="1" width="70%">
     <tr>
         <td>ID</td>
         <td>Full Name</td>
@@ -29,7 +36,7 @@ $row = mysqli_fetch_assoc($result);
     </tr>
     <?php
     foreach($result as $row){
-        print_r($row) ?>
+        ?>
 
         <tr>
             <td><?php echo $row['ID']?></td>

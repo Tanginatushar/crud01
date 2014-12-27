@@ -39,8 +39,11 @@ $query = "UPDATE `employskills`.`empskilref` SET `comName` = '".$comName."',
 `add` = '".$add."',
 `relation` = '".$relation."',
 `mobile` = '".$mobile."',
-`email` = '".$email."',
+`email` = '".$email."'
 
 WHERE `empskilref`.`ID` = $ID;";
-mysqli_query($link, $query);
+
+//echo $query;
+
+mysqli_query($link, $query) or die(mysqli_error($link));
 header('location:list.php');

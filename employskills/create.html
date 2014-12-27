@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>Online Application Form</title>
-</head>
-<body>
+<title>Online Application Form</title>
+
+
 <form action ="add.php"method="post">
-    <h3>Employment : </h3></br>
+    <h3>Employment History </h3></br>
     ID:<input type="number"name="ID"></br>
     Company Name:<input type="text"name="comName"></br>
     Company Business: <input type="text"name="comBusiness"></br>
@@ -24,10 +20,14 @@
     Extracurricular Activity: <input type="text"name="exAct"></br>
 
     <h3> Reference</h3><br>
-    Name:<input type="text"name="Name"></br>
+    Name:<input type="text"name="name"></br>
     Organisation: <input type="text"name="org"></br>
     Address: <input type="text"name="add"></br>
-    Relation: <input type="text"name="relation"></br>
+    Relation:<select name="relation">
+    <option value="Relative">Relative</option>
+    <option value="Academic">Academic</option>
+</select>
+
     Mobile: <input type="text"name="mobile"></br>
     Email:<input type="text"name="email"></br>
 
@@ -35,5 +35,3 @@
 
     <input type="submit"value="Submit">
 </form>
-</body>
-</html>

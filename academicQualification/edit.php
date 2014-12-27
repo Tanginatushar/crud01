@@ -1,7 +1,8 @@
 <?php
 $ID = $_GET['ID'];
-$levelOfEducation;
-$resultType;
+$levelOfEducation=" ";
+;
+$resultType=" ";
 
 $link = mysqli_connect("localhost",
     "root",
